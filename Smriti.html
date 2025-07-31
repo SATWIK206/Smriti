@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Smriti ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h1, h2 {
+      color: #e91e63;
+    }
+    .heart {
+      font-size: 4em;
+      animation: beat 1s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 12px;
+    }
+    .poems, .quiz, .game {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #surprise {
+      display: none;
+      font-weight: bold;
+      color: #d32f2f;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="heart">❤️</div>
+    <h1>Happy Girlfriend's Day, Smriti!</h1>
+    <p>Made with love, just for you.</p>
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/Y6GtWgJGtmU?autoplay=1&loop=1&playlist=Y6GtWgJGtmU" frameborder="0" allow="autoplay"></iframe>
+  </section>
+
+  <section>
+    <h2>💌 A Letter for You</h2>
+    <p>I don’t say this enough, but I’m truly lucky to have you.<br>
+    No one is as cute, kind, and unique as you. You’re different from everyone else — and that’s exactly why I love you.<br>
+    The way you talk to me, the way you smile, the way you just *are*... it all means the world to me.<br>
+    Today is bad day for u. cz of me and i am sorry for that T-T. The last thing is tyyyy for jhelne ke liye mereko— and I made this just for you.</p>
+    <p>Yours always,<br><strong>[Billu]</strong></p>
+  </section>
+
+  <section>
+    <h2>📅 Our Timeline</h2>
+    <p>1 August — Happy Girlfriend’s Day ❤️</p>
+  </section>
+
+  <section>
+    <h2>❤️ Why I Love You</h2>
+    <ul style="list-style: none; font-size: 1.2em;">
+      <li>💖 No one is cuter than you</li>
+      <li>🌟 You’re different from others</li>
+      <li>💎 You’re unique</li>
+      <li>🤗 You care about me so much</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Our Memories</h2>
+    <img src="WhatsApp Image 2025-07-31 at 18.08.11_125cc3a7.jpg" alt="Photo 1" />
+    
+  </section>
+
+  <section class="poems">
+    <h2>🌷 Click for a Random Poem</h2>
+    <button onclick="showPoem()">Show Poem</button>
+    <p id="poem"></p>
+  </section>
+
+  <section>
+    <h2>💖 Tap the Heart!</h2>
+    <button onclick="document.getElementById('surprise').style.display='block'">💗</button>
+    <p id="surprise">You are the best thing that ever happened to me. 💘</p>
+  </section>
+
+  <section>
+    <h2>⏳ Countdown to Next Date</h2>
+    <p id="countdown"></p>
+  </section>
+
+  <section class="game">
+    <h2>🎮 Catch the Heart Game</h2>
+    <p>(Game coming soon!)</p>
+  </section>
+
+  <section class="quiz">
+    <h2>❓ Little Love Quiz</h2>
+    <p>Who is the cutest person in the world?</p>
+    <button onclick="alert('Correct! It’s YOU! 😍')">Smriti</button>
+    <button onclick="alert('Hmm... Try again! 😅')">Someone else</button>
+  </section>
+
+  <section>
+    <h2>🎁 Final Surprise</h2>
+    <p>This song says what words can't... <br>
+    <a href="https://www.youtube.com/watch?v=mfX7ynqrq2k" target="_blank">(Listen) Ik Kudi</a></p>
+  </section>
+
+  <script>
+    function showPoem() {
+      const poems = [
+        "Your smile is my sunrise, your laugh is my sunset.",
+        "In your eyes, I find home.",
+        "If I could write you in the stars, the sky would shine every night.",
+        "With every beat, my heart says your name."
+      ];
+      document.getElementById('poem').innerText = poems[Math.floor(Math.random() * poems.length)];
+    }
+
+    // Countdown logic
+    const targetDate = new Date('2025-08-01T00:00:00');
+    const countdown = document.getElementById('countdown');
+    setInterval(() => {
+      const now = new Date();
+      const diff = targetDate - now;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      countdown.innerText = `${days} days left until our next Girlfriend's Day ❤️`;
+    }, 1000);
+  </script>
+</body>
+</html>
